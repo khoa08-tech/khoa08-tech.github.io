@@ -7,20 +7,22 @@
 	<meta name="author" content="Khoa"/>
 	<meta name="country" content="Vietnam"/>
 	<link rel="stylesheet" href="css/style.css">
-	<title>Đăng Khoa info</title>
+	<script src="js/main.js"></script>
+	<link rel="icon" href="assets/logo.png" sizes="any" type="image/png">
+	<title>Danielcoder</title>
 </head>
 <body>
-	<h1 id="title"> Basic info </h1>
 	<nav>
 		<a href="#contact" class="left_menu">About</a>
 		<a href="#edu" class="left_menu">Education</a>
 		<a href="#age" class="left_menu">Age</a>
+		<a href="#convert" class="left_menu">Convert</a>
 		<a href="#fb" class="right_menu">Social media</a>
 	</nav>
 	<div id="flex_container">
 		<div id="left_side">
 			<h2 id="contact"> About me </h2>
-			<img src="assets/logo.png" alt="logo" width="400" height="400" />
+			<img src="assets/logo.png" alt="logo" width="200" height="200" />
 			<p> <em> I'm a student in Tran Dai Nghia High School. </em> </p>
 			<ul>
 				<li> <strong> Full name: </strong> Nguyễn Dư Đăng Khoa </li>
@@ -109,11 +111,16 @@
 					<div class="licenses_description"> Making convenient notes and websites </div>
 				</div>
 			</div>
+			<h2 id="convert">Convert USD to VND</h2>
+			<label for="usd">USD:</label>
+			<input type="text" id="usd" name="usd"><br><br>
+			<button type="button" id="USD">Click to convert</button>
+			<p id="mes"></p>
 		</div>
 	</div>
 	<footer>
 		<p>Owned by Nguyễn Dư Đăng Khoa.</p>
-		<a href="mailto:nguyendudangkhoa08@gmail.com">Send emails</a>
+		<a href="mailto:nguyendudangkhoa08@gmail.com">Click to send emails</a>
 	</footer>
 </body>
 </html>

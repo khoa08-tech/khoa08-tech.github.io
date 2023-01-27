@@ -1,8 +1,28 @@
+h1 {
+	color: red;
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+}
 h2 {
 	margin-top: 20px;
 	margin-bottom: 10px;
-	font-size: 50px;
+	font-size: 35px;
 	color: green
+}
+#maysaytangsoi {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 35px;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+#fb {
+	background-color: green;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 35px;
+	color: yellow
 }
 button {
 	background-color: darkblue;
@@ -13,8 +33,18 @@ label {
 	font-size: 30px;
 }
 input {
-	height: 30px;
-	font-size: 30px;
+	height: 35px;
+	font-size: 25px;
+}
+legend {
+	font-size: 26px;
+}
+fieldset {
+	color: darkblue;
+}
+select {
+	font-size: 25px;
+	height: 35px;
 }
 #title {
 	background-color: orange;
@@ -25,6 +55,7 @@ input {
 }
 #social {
 	margin-bottom: 10px;
+	color: white;
 }
 table {
 	margin-bottom: 10px;
@@ -69,11 +100,17 @@ nav a:hover {
 	color: black;
 }
 p {
-	font-size: 30px;
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 ul {
-	font-size: 30px;
-	margin-left: 35px;
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+li {
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
 }
 ol {
 	margin-left: 35px;
@@ -84,15 +121,38 @@ table {
 }
 footer {
 	background-color: green;
-	text-align: center;
-	padding: 10px 20px;
+	padding: 2px;
 }
 footer p {
 	color: yellow;
+	font-family: Arial, Helvetica, sans-serif;
 }
 footer a {
 	color: yellow;
 	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#machines_link:link, #machines_link:visited {
+	background-color: #f44336;
+	color: #fff;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+#machines_link:hover, #machines_link:active {
+  background-color: red;
+}
+#sub_machines_link:link, #sub_machines_link:visited {
+	background-color: blue;
+	color: #fff;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+#sub_machines_link:hover, #sub_machines_link:active {
+  background-color: green;
 }
 #flex_container {
 	display: flex;
@@ -100,31 +160,31 @@ footer a {
 }
 #left_side {
 	flex: 30%;
-	background-color: yellow;
 	padding: 10px 20px;
 }
 #right_side {
 	flex: 70%;
-	background-color: orangered;
+	background-color: skyblue;
 	padding: 10px 20px;
 }
-.licenses_item {
+.machines_item {
 	text-align: center;
 	flex: 33%;
 }
-.licenses_img {
+.machines_img {
 	width: 90%;
 }
-.licenses_title {
+.machines_title {
 	font-size: 125%;
 	font-weight: bold;
 	padding: 10px 10px 5px 10px;
 }
-.licenses_description {
+.machines_description {
 	margin: 0px 10px 20px 10px;
 	font-size: 20px;
+	font-family: arial,sans-serif;
 }
-#licenses_container {
+#machines_container {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -138,7 +198,7 @@ footer a {
 	#flex_container {
 		flex-wrap: wrap;
 	}
-	.licenses_item {
+	.machines_item {
 		flex: 50%;
 	}
 }

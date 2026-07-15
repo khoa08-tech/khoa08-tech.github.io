@@ -234,9 +234,12 @@ legend {
 .contact-form label {
 	display: block;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 700;
 	margin: 14px 0 6px;
-	color: var(--ink);
+	color: #ffe08a; /* bright, legible on the dark footer */
+}
+.contact-form legend {
+	color: #ffe08a;
 }
 .contact-form input,
 .contact-form textarea {
@@ -295,6 +298,17 @@ footer p, footer li { color: #dfeae8; font-size: 17px; }
 footer ul { padding-left: 20px; }
 footer a { color: #ffd9a8; font-weight: 600; }
 footer a:hover { color: var(--white); }
+.since {
+	text-align: center;
+	color: #ffe08a;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 18px 0 0;
+	padding-top: 14px;
+	border-top: 1px solid rgba(255, 255, 255, .15);
+}
 
 /* ---------- Floating action buttons ---------- */
 .fab-stack {

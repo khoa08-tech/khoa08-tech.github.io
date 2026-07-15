@@ -9,13 +9,18 @@ h2 {
 	font-size: 35px;
 	color: green
 }
-#maysaytangsoi {
+.product_title {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	font-size: 35px;
 	color: black;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
+}
+#logo img {
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 #fb {
 	background-color: green;
@@ -76,16 +81,16 @@ table th {
 	color: black;
 }
 nav {
-	background-color: #08d4c9;
+	background-color: #046a63;
 	text-align: center;
 	font-size: 40px;
 	padding: 20px;
 	overflow: hidden;
 }
 nav a {
-	background-color: #08d4c9;
+	background-color: #046a63;
 	padding: 20px 40px;
-	color: blue;
+	color: #ffffff;
 	text-decoration: none;
 	display: block;
 }
@@ -132,7 +137,7 @@ footer a {
 	font-size: 30px;
 	font-family: Arial, Helvetica, sans-serif;
 }
-#machines_link:link, #machines_link:visited {
+.machines_link:link, .machines_link:visited {
 	background-color: #f44336;
 	color: #fff;
 	padding: 14px 25px;
@@ -140,10 +145,10 @@ footer a {
 	text-decoration: none;
 	display: inline-block;
 }
-#machines_link:hover, #machines_link:active {
+.machines_link:hover, .machines_link:active {
   background-color: red;
 }
-#sub_machines_link:link, #sub_machines_link:visited {
+.sub_machines_link:link, .sub_machines_link:visited {
 	background-color: blue;
 	color: #fff;
 	padding: 14px 25px;
@@ -151,7 +156,7 @@ footer a {
 	text-decoration: none;
 	display: inline-block;
 }
-#sub_machines_link:hover, #sub_machines_link:active {
+.sub_machines_link:hover, .sub_machines_link:active {
   background-color: green;
 }
 #flex_container {

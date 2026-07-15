@@ -7,6 +7,8 @@
 	<meta name="author" content="Khoa"/>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="assets/logo.png" sizes="any" type="image/png">
+	<link rel="apple-touch-icon" href="assets/logo.png">
+	<meta name="theme-color" content="#046a63">
 	<title>Thiên An Machinery | Chế Tạo Máy Dược Phẩm, Thực Phẩm, Mỹ Phẩm</title>
 	<link rel="canonical" href="https://www.chetaomaythienan.com/" />
 	<meta property="og:type" content="website" />
@@ -35,15 +37,17 @@
 </head>
 <body>
 	<div id="logo">
-		<img src="assets/header.jpg" alt="Công ty Cổ phần Chế tạo máy Thiên An" />
+		<a href="/"><img src="assets/header.jpg" alt="Công ty Cổ phần Chế tạo máy Thiên An" /></a>
 	</div>
 	<nav> <!--- Menu of website --->
-		<a href="#contact" class="left_menu">GIỚI THIỆU</a>
-		<a href="#machines" class="left_menu">SẢN PHẨM</a>
-		<a href="#fb" class="left_menu">LIÊN HỆ</a>
+		<a href="/" class="home">TRANG CHỦ</a>
+		<a href="#contact">GIỚI THIỆU</a>
+		<a href="#machines">SẢN PHẨM</a>
+		<a href="#fb">LIÊN HỆ</a>
 	</nav>
 	<div id="flex_container"> <!-- Content container -->
 		<div id="left_side">
+			<h1>Chế Tạo Máy Dược Phẩm, Thực Phẩm &amp; Mỹ Phẩm Đạt Chuẩn GMP</h1>
 			<h2 id="contact"> GIỚI THIỆU </h2>
 			<p> CÔNG TY CỔ PHẦN CHẾ TẠO MÁY THIÊN AN chuyên thiết kế, chế tạo máy móc, thiết bị cho các ngành sau: </p>
 			<p>-	Chế tạo máy dược phẩm, thực phẩm, thực phẩm chức năng, thú y, hóa mỹ phẩm… phù hợp tiêu chuẩn GMP, bằng inox 304 hoặc 316; năng suất từ 3kg/mẻ dùng cho phòng nghiên cứu (R&D) đến năng suất 600kg/ mẻ với các dòng máy chính như sau: </p>
@@ -109,8 +113,36 @@
 			<li> Website: www.chetaomaythienan.com</li>
 			<li> Xem bản đồ <a href="https://goo.gl/maps/dnVV5cBHUxiJSwGn6">tại đây</a></li>
 		</ul>
+		<!-- Replace the form action with your own Formspree (or similar) endpoint to receive submissions by email. -->
+		<form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+			<fieldset>
+				<legend>Gửi Yêu Cầu / Báo Giá</legend>
+				<label for="cf-name">Họ và tên</label>
+				<input id="cf-name" type="text" name="name" autocomplete="name" required>
+				<label for="cf-phone">Số điện thoại</label>
+				<input id="cf-phone" type="tel" name="phone" autocomplete="tel" required>
+				<label for="cf-email">Email</label>
+				<input id="cf-email" type="email" name="email" autocomplete="email">
+				<label for="cf-message">Nội dung yêu cầu</label>
+				<textarea id="cf-message" name="message" rows="4" required></textarea>
+				<button type="submit">Gửi Yêu Cầu</button>
+			</fieldset>
+		</form>
+		<iframe class="map-embed" height="320" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ Công ty Chế tạo máy Thiên An" src="https://maps.google.com/maps?q=188%20Ch%E1%BB%A3%20L%E1%BB%9Bn%2C%20Ph%C6%B0%E1%BB%9Dng%2011%2C%20Qu%E1%BA%ADn%206%2C%20TP%20HCM&output=embed"></iframe>
 		<p>Xin chân thành cảm ơn quý khách đã tín nhiệm sản phẩm của chúng tôi.</p>
-		<a href="mailto:chetaomaythienan@gmail.com">Gửi thư tại đây</a>
 	</footer>
+
+	<!-- Floating contact buttons -->
+	<div class="fab-stack">
+		<a class="fab fab-call" href="tel:+84983361206" aria-label="Gọi điện" title="Gọi 0983 361 206">
+			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg>
+		</a>
+		<a class="fab fab-zalo" href="https://zalo.me/84983361206" target="_blank" rel="noopener" aria-label="Chat Zalo" title="Chat Zalo">Zalo</a>
+		<a class="fab fab-mail" href="mailto:chetaomaythienan@gmail.com" aria-label="Gửi email" title="Gửi email">
+			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7L4 6.5V8l8 4.5L20 8V6.5L12 11z"/></svg>
+		</a>
+	</div>
+
+	<script src="js/site.js" defer></script>
 </body>
 </html>

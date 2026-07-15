@@ -113,8 +113,7 @@
 			<li> Website: www.chetaomaythienan.com</li>
 			<li> Xem bản đồ <a href="https://goo.gl/maps/dnVV5cBHUxiJSwGn6">tại đây</a></li>
 		</ul>
-		<!-- Replace the form action with your own Formspree (or similar) endpoint to receive submissions by email. -->
-		<form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+		<form class="contact-form" action="https://formspree.io/f/meeyoyok" method="POST">
 			<fieldset>
 				<legend>Gửi Yêu Cầu / Báo Giá</legend>
 				<label for="cf-name">Họ và tên</label>
@@ -125,6 +124,10 @@
 				<input id="cf-email" type="email" name="email" autocomplete="email">
 				<label for="cf-message">Nội dung yêu cầu</label>
 				<textarea id="cf-message" name="message" rows="4" required></textarea>
+				<!-- Subject line for the notification email Formspree sends you -->
+				<input type="hidden" name="_subject" value="Yêu cầu mới từ website Thiên An">
+				<!-- Honeypot: hidden from people, bots fill it in and get filtered as spam -->
+				<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
 				<button type="submit">Gửi Yêu Cầu</button>
 			</fieldset>
 		</form>

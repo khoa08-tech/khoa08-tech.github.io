@@ -316,7 +316,12 @@ button:hover, .btn:hover { background: var(--accent-dark); }
 	max-width: var(--maxw);
 	border: 0;
 	border-radius: var(--radius);
-	margin-top: 14px;
+	margin-top: 8px;
+}
+.map-label {
+	margin: 18px 0 0;
+	font-weight: 700;
+	color: #ffe08a;
 }
 
 /* ---------- Footer ---------- */
